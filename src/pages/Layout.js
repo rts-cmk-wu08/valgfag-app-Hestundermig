@@ -5,7 +5,6 @@ const Layout = () => {
         <>
             <header>
                 <p>Sej header</p>
-                
             </header>
             <main>
                 <Outlet />
