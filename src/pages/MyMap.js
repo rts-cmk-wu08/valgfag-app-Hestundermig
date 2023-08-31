@@ -1,4 +1,4 @@
-// eslint import/no-webpack-loader-syntax: off
+/* eslint import/no-webpack-loader-syntax: off */
 
 import React, { useState, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
