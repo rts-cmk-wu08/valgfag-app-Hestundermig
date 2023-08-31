@@ -50,7 +50,7 @@ const MyMap = () => {
   return (
     <Map
       maplib={import("mapbox-gl")}
-      mapboxApiAccessToken ={process.env.REACT_APP_MAPBOX}
+      mapboxAccessToken={process.env.REACT_APP_MAPBOX}
       style={{ width: "100vw", height: "50vh" }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
       initialViewState={{
