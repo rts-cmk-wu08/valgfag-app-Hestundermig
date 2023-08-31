@@ -72,9 +72,10 @@
 import React, { useState, useEffect } from "react";
 // import mapboxgl from "mapbox-gl";
 import { Map, NavigationControl, Marker, GeolocateControl } from "react-map-gl";
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
 
-// mapboxgl.workerClass =
-  // require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+mapboxgl.workerClass =
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const MyMap = () => {
   const [userPosition, setUserPosition] = useState(null);
