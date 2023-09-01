@@ -11,7 +11,7 @@ const Shop = () => {
 
   return (
     <>
-    <Link to="/">Tilbage til forsiden</Link>
+    <Link to="/map">Gå til map</Link>
     <div>
       <h2>Shop</h2>
       <p>Produkt</p>
