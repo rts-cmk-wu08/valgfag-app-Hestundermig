@@ -30,3 +30,5 @@ Notifikationen.
 
 Hvilke andre funktionaliteter kunne du forestille dig, at applikationen kunne have (hvis du havde masser af tid)?  
 En generel større shop, hvor man havde flere produkter, og måske noget detaljevisning på produkterne.
+
+https://app.netlify.com/sites/trackerapplukas/overview
