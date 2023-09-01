@@ -1,4 +1,4 @@
-import MyMap from "./pages/MyMap";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
       <p>Header</p>
     </header>
       <main>
-        <MyMap />
+        <Outlet />
       </main>
       <footer className="footer">
         <p>Footer</p>

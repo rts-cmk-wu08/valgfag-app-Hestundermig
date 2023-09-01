@@ -5,6 +5,7 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router.js';
+// import push from "../public/push.js"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

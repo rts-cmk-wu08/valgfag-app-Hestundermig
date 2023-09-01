@@ -1,16 +1,17 @@
 import { Outlet } from "react-router-dom";
+import style from 'style.css';
 
 const Layout = () => {
     return ( 
         <>
-            <header>
-                <p>Sej header</p>
+            <header class="hf">
+                <p class="hf-text">Sej header</p>
             </header>
             <main>
                 <Outlet />
             </main>
-            <footer>
-                <p>Sej footer</p>
+            <footer class="hf">
+                <p class="hf-text">Sej footer</p>
             </footer>
         </>
     )

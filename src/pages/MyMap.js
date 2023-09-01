@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import { Map, NavigationControl, Marker, GeolocateControl } from "react-map-gl";
+import { Link } from "react-router-dom";
+
 // import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
 
 mapboxgl.workerClass =
@@ -48,6 +50,8 @@ const MyMap = () => {
   }
 
   return (
+    <>
+    <Link to="/">Tilbage til forsiden</Link>
     <Map
       maplib={import("mapbox-gl")}
       mapboxAccessToken={process.env.REACT_APP_MAPBOX}
@@ -74,6 +78,7 @@ const MyMap = () => {
         auto
       />
     </Map>
+    </>
   );
 };
 
