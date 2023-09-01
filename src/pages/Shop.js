@@ -5,7 +5,7 @@ const Shop = () => {
   const [notification, setNotification] = useState('');
 
   const handleBuyClick = () => {
-    setNotification('Tak for dit køb! 🛍️');
+    setNotification('Du har købt et sejt produkt');
 
     if ('serviceWorker' in navigator && 'PushManager' in window) {
       navigator.serviceWorker.ready.then((registration) => {
@@ -17,7 +17,6 @@ const Shop = () => {
   };
 
   useEffect(() => {
-    // Registrer servicemedarbejderen
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
         .register('/service-worker.js')
@@ -34,8 +33,8 @@ const Shop = () => {
     <>
     <Link to="/">Tilbage til forsiden</Link>
     <div>
-      <h2>Velkommen til vores shop</h2>
-      <p>Produkt: Super produkt</p>
+      <h2>Shop</h2>
+      <p>Produkt: Produkt</p>
       <button onClick={handleBuyClick}>Køb</button>
       <p>{notification}</p>
     </div>
