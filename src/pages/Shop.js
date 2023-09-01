@@ -6,7 +6,7 @@ import OneSignal from "react-onesignal";
 const Shop = () => {
 
     const notiClick = () => {
-          OneSignal.init({appId: process.env.REACT_APP_ONESIGNAL})
+        OneSignal.init({appId: process.env.REACT_APP_ONESIGNAL})
     }
 
   return (
